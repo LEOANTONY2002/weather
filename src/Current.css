@@ -1,0 +1,50 @@
+.weather {
+  color: white;
+  text-align: center;
+  background-image: url("./images/city.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.main {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(7, 7, 128);
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.temp {
+  font-size: large;
+  font-weight: 900;
+}
+
+.loading {
+  color: rgb(75, 73, 73);
+}
+
+.coords {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.coords > p {
+  color: rgb(207, 201, 201);
+  font-size: 18px;
+}
+
+span {
+  font-weight: 800;
+}

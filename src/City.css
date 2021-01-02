@@ -1,0 +1,40 @@
+.city {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/current.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.city > input {
+  width: 80vw;
+  height: 50px;
+  border: 1.5px solid rgb(146, 10, 146);
+  border-radius: 50px;
+  background: transparent;
+  box-shadow: 0 0 10px 2px rgb(139, 9, 139);
+  text-indent: 20px;
+  font-size: 15px;
+  color: rgb(183, 43, 226);
+  margin-top: 50px;
+}
+
+.city > input:focus,
+.city > button {
+  outline: none;
+}
+
+.city > button {
+  height: 50px;
+  width: 20vw;
+}
+
+.city-weather {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  margin-top: -50px;
+  color: white;
+}

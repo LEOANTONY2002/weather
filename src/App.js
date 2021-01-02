@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Current from "./CurrentWeather";
+import City from "./CityWeather";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/current">
+            <Current />
+          </Route>
+          <Route path="/city">
+            <City />
+          </Route>
+          <Route path="/">
+            <div>
+              <Link to="/current">
+                <button className="curr-btn">CURRENT LOCATION</button>
+              </Link>
+              <Link to="/city">
+                <button className="city-btn">SEARCH BY CITY</button>
+              </Link>
+            </div>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
